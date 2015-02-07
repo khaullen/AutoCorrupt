@@ -18,6 +18,7 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet weak var row4: UIView!
     
     @IBOutlet weak var autocompleteRow: UIView!
+    @IBOutlet weak var autocomplete1: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

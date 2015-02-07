@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="AutoCorrupt" customModuleProvider="target">
             <connections>
+                <outlet property="autocomplete1" destination="hsO-eO-dbj" id="B4N-Sx-28p"/>
                 <outlet property="autocompleteRow" destination="dhe-t2-h6i" id="OgL-vj-qM7"/>
                 <outlet property="row1" destination="0xy-Pe-qwV" id="YN8-PV-4B2"/>
                 <outlet property="row2" destination="mdI-mv-xgq" id="Pbg-0f-cfT"/>
