@@ -50,6 +50,7 @@ class KeyboardViewController: UIInputViewController {
                 button.transform =
                     CGAffineTransformScale(CGAffineTransformIdentity, 1, 1)
         })
+        updateAutocomplete()
     }
     
     @IBAction func backSpacePressed(button: UIButton) {
@@ -85,6 +86,12 @@ class KeyboardViewController: UIInputViewController {
                 }
             }
         }
+    }
+    
+    // MARK: Demo
+    
+    func updateAutocomplete() {
+        autocomplete1.setTitle((textDocumentProxy as UITextDocumentProxy).documentContextBeforeInput, forState: .Normal)
     }
     
 }
