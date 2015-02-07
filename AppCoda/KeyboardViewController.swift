@@ -68,6 +68,7 @@ class KeyboardViewController: UIInputViewController {
     
     @IBAction func autocompletePressed(sender: UIButton) {
         keyPressed(sender)
+        spacePressed(sender)
     }
     
     func changeCaps(containerView: UIView) {
