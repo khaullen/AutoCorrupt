@@ -91,17 +91,18 @@ class KeyboardViewController: UIInputViewController {
     // MARK: Demo
     
     func updateAutocomplete() {
-        let completion = completionDictionary[(textDocumentProxy as UITextDocumentProxy).documentContextBeforeInput]
+        let context = (textDocumentProxy as UITextDocumentProxy).documentContextBeforeInput
+        let completion = completionDictionary[context.lowercaseString]
         if let completion = completion {
             autocomplete1.setTitle(completion, forState: .Normal)
         }
     }
     
     var completionDictionary: [String: String] {
-        return ["Mm": "Mm Mm Good",
-                "Mm, I’d like": "I like you",
-                "Mm, I’d like to swipe": "swipe my heart",
-                "Mm, I’d like to swipe right on": "on your honor"]
+        return ["mm": "Mm Mm Good",
+                "mm id like": "I like you",
+                "mm id like to swipe": "swipe my heart",
+                "mm id like to swipe right on": "on your honor"]
     }
     
 }
