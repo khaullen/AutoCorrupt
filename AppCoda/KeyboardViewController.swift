@@ -98,7 +98,10 @@ class KeyboardViewController: UIInputViewController {
     }
     
     var completionDictionary: [String: String] {
-        return ["HI": "hello"]
+        return ["Mm": "Mm Mm Good",
+                "Mm, I’d like": "I like you",
+                "Mm, I’d like to swipe": "swipe my heart",
+                "Mm, I’d like to swipe right on": "on your honor"]
     }
     
 }
