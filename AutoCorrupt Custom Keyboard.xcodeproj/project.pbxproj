@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F00BC111A86C1C700CEA525 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F13CA6A1A86B159002FE2C4 /* Alamofire.framework */; };
+		2F00BC121A86C1C700CEA525 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F13CA6A1A86B159002FE2C4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F13C9BB1A85FA26002FE2C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13C9BA1A85FA26002FE2C4 /* AppDelegate.swift */; };
 		2F13C9BD1A85FA26002FE2C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13C9BC1A85FA26002FE2C4 /* ViewController.swift */; };
 		2F13C9C01A85FA26002FE2C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F13C9BE1A85FA26002FE2C4 /* Main.storyboard */; };
@@ -22,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2F00BC131A86C1C700CEA525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F13CA621A86B158002FE2C4 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 		2F13C9CB1A85FA26002FE2C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2F13C9AD1A85FA26002FE2C4 /* Project object */;
@@ -74,6 +83,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2F00BC151A86C1C800CEA525 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2F00BC121A86C1C700CEA525 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F13C9EA1A85FA7F002FE2C4 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F00BC111A86C1C700CEA525 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,11 +261,13 @@
 				2F13C9B21A85FA26002FE2C4 /* Frameworks */,
 				2F13C9B31A85FA26002FE2C4 /* Resources */,
 				2F13C9EA1A85FA7F002FE2C4 /* Embed App Extensions */,
+				2F00BC151A86C1C800CEA525 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				2F13C9E51A85FA7F002FE2C4 /* PBXTargetDependency */,
+				2F00BC141A86C1C700CEA525 /* PBXTargetDependency */,
 			);
 			name = "AutoCorrupt Custom Keyboard";
 			productName = "AutoCorrupt Custom Keyboard";
@@ -425,6 +448,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2F00BC141A86C1C700CEA525 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 2F00BC131A86C1C700CEA525 /* PBXContainerItemProxy */;
+		};
 		2F13C9CC1A85FA26002FE2C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2F13C9B41A85FA26002FE2C4 /* AutoCorrupt Custom Keyboard */;
