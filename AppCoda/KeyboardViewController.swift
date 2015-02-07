@@ -17,16 +17,13 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet weak var row3: UIView!
     @IBOutlet weak var row4: UIView!
     
-    @IBOutlet weak var charSet1: UIView!
-    @IBOutlet weak var charSet2: UIView!
+    @IBOutlet weak var autocompleteRow: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
         let objects = nib.instantiateWithOwner(self, options: nil)
         view = objects[0] as UIView;
-        
-        charSet2.hidden = true
     }
     
     @IBAction func nextKeyboardPressed(button: UIButton) {
@@ -67,15 +64,10 @@ class KeyboardViewController: UIInputViewController {
     }
     
     @IBAction func charSetPressed(button: UIButton) {
-        if button.titleLabel!.text == "1/2" {
-            charSet1.hidden = true
-            charSet2.hidden = false
-            button.setTitle("2/2", forState: .Normal)
-        } else if button.titleLabel!.text == "2/2" {
-            charSet1.hidden = false
-            charSet2.hidden = true
-            button.setTitle("1/2", forState: .Normal)
-        }
+    }
+    
+    @IBAction func autocompletePressed(sender: UIButton) {
+        keyPressed(sender)
     }
     
     func changeCaps(containerView: UIView) {
