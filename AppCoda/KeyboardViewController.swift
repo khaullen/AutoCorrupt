@@ -91,7 +91,14 @@ class KeyboardViewController: UIInputViewController {
     // MARK: Demo
     
     func updateAutocomplete() {
-        autocomplete1.setTitle((textDocumentProxy as UITextDocumentProxy).documentContextBeforeInput, forState: .Normal)
+        let completion = completionDictionary[(textDocumentProxy as UITextDocumentProxy).documentContextBeforeInput]
+        if let completion = completion {
+            autocomplete1.setTitle(completion, forState: .Normal)
+        }
+    }
+    
+    var completionDictionary: [String: String] {
+        return ["HI": "hello"]
     }
     
 }
