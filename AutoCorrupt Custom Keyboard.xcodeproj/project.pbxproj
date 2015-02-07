@@ -13,12 +13,11 @@
 		2F13C9C21A85FA26002FE2C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F13C9C11A85FA26002FE2C4 /* Images.xcassets */; };
 		2F13C9C51A85FA26002FE2C4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F13C9C31A85FA26002FE2C4 /* LaunchScreen.xib */; };
 		2F13C9D11A85FA26002FE2C4 /* AutoCorrupt_Custom_KeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13C9D01A85FA26002FE2C4 /* AutoCorrupt_Custom_KeyboardTests.swift */; };
-		2F13C9E31A85FA7F002FE2C4 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13C9E21A85FA7F002FE2C4 /* KeyboardViewController.swift */; };
 		2F13C9E61A85FA7F002FE2C4 /* AutoCorrupt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F13C9DE1A85FA7F002FE2C4 /* AutoCorrupt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2F13CA5E1A869FE7002FE2C4 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F13CA5C1A869FE7002FE2C4 /* KeyboardView.xib */; };
 		2F13CA5F1A869FE7002FE2C4 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F13CA5C1A869FE7002FE2C4 /* KeyboardView.xib */; };
-		2F13CA601A869FE7002FE2C4 /* AppCodaKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13CA5D1A869FE7002FE2C4 /* AppCodaKeyboardViewController.swift */; };
-		2F13CA611A869FE7002FE2C4 /* AppCodaKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13CA5D1A869FE7002FE2C4 /* AppCodaKeyboardViewController.swift */; };
+		2F13CA601A869FE7002FE2C4 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13CA5D1A869FE7002FE2C4 /* KeyboardViewController.swift */; };
+		2F13CA611A869FE7002FE2C4 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13CA5D1A869FE7002FE2C4 /* KeyboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +64,8 @@
 		2F13C9D01A85FA26002FE2C4 /* AutoCorrupt_Custom_KeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCorrupt_Custom_KeyboardTests.swift; sourceTree = "<group>"; };
 		2F13C9DE1A85FA7F002FE2C4 /* AutoCorrupt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AutoCorrupt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F13C9E11A85FA7F002FE2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F13C9E21A85FA7F002FE2C4 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
-		2F13CA5C1A869FE7002FE2C4 /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
-		2F13CA5D1A869FE7002FE2C4 /* AppCodaKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCodaKeyboardViewController.swift; sourceTree = "<group>"; };
+		2F13CA5C1A869FE7002FE2C4 /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KeyboardView.xib; path = ../AppCoda/KeyboardView.xib; sourceTree = "<group>"; };
+		2F13CA5D1A869FE7002FE2C4 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardViewController.swift; path = ../AppCoda/KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 		2F13C9AC1A85FA26002FE2C4 = {
 			isa = PBXGroup;
 			children = (
-				2F13CA5B1A869FE7002FE2C4 /* AppCoda */,
 				2F13C9B71A85FA26002FE2C4 /* AutoCorrupt Custom Keyboard */,
 				2F13C9CD1A85FA26002FE2C4 /* AutoCorrupt Custom KeyboardTests */,
 				2F13C9DF1A85FA7F002FE2C4 /* AutoCorrupt */,
@@ -157,7 +154,8 @@
 		2F13C9DF1A85FA7F002FE2C4 /* AutoCorrupt */ = {
 			isa = PBXGroup;
 			children = (
-				2F13C9E21A85FA7F002FE2C4 /* KeyboardViewController.swift */,
+				2F13CA5C1A869FE7002FE2C4 /* KeyboardView.xib */,
+				2F13CA5D1A869FE7002FE2C4 /* KeyboardViewController.swift */,
 				2F13C9E01A85FA7F002FE2C4 /* Supporting Files */,
 			);
 			path = AutoCorrupt;
@@ -169,15 +167,6 @@
 				2F13C9E11A85FA7F002FE2C4 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2F13CA5B1A869FE7002FE2C4 /* AppCoda */ = {
-			isa = PBXGroup;
-			children = (
-				2F13CA5C1A869FE7002FE2C4 /* KeyboardView.xib */,
-				2F13CA5D1A869FE7002FE2C4 /* AppCodaKeyboardViewController.swift */,
-			);
-			path = AppCoda;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F13C9BD1A85FA26002FE2C4 /* ViewController.swift in Sources */,
-				2F13CA601A869FE7002FE2C4 /* AppCodaKeyboardViewController.swift in Sources */,
+				2F13CA601A869FE7002FE2C4 /* KeyboardViewController.swift in Sources */,
 				2F13C9BB1A85FA26002FE2C4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,8 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F13C9E31A85FA7F002FE2C4 /* KeyboardViewController.swift in Sources */,
-				2F13CA611A869FE7002FE2C4 /* AppCodaKeyboardViewController.swift in Sources */,
+				2F13CA611A869FE7002FE2C4 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

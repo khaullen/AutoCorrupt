@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppCodaKeyboardViewController: UIInputViewController {
+class KeyboardViewController: UIInputViewController {
     
     var capsLockOn = true
     

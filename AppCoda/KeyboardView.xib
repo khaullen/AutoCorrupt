@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppCodaKeyboardViewController" customModule="AutoCorrupt" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="AutoCorrupt" customModuleProvider="target">
             <connections>
                 <outlet property="charSet1" destination="dhe-t2-h6i" id="JPQ-Y7-n5R"/>
                 <outlet property="charSet2" destination="jvL-im-8fJ" id="gkl-e4-dZB"/>
