@@ -44,6 +44,14 @@ class KeyboardViewController: UIInputViewController {
     
     @IBAction func keyPressed(button: UIButton) {
         var string = button.titleLabel!.text
+        
+        // Turn off CAPS if one is typed
+        if countElements(string!) == 1 {
+            if capsLockOn {
+                capsLockPressed(button)
+            }
+        }
+        
         (textDocumentProxy as UIKeyInput).insertText("\(string!)")
         
         UIView.animateWithDuration(0.2, animations: {
