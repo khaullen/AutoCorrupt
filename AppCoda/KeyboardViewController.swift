@@ -69,8 +69,11 @@ class KeyboardViewController: UIInputViewController {
     }
     
     @IBAction func autocompletePressed(sender: UIButton) {
+        while (textDocumentProxy as UIKeyInput).hasText() {
+            (textDocumentProxy as UIKeyInput).deleteBackward()
+        }
         keyPressed(sender)
-        spacePressed(sender)
+        (textDocumentProxy as UIKeyInput).insertText(" ")
     }
     
     func changeCaps(containerView: UIView) {
