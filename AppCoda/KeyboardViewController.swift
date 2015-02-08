@@ -116,14 +116,37 @@ class KeyboardViewController: UIInputViewController {
     
     var completionDictionary: [String: String] {
         return ["mm": "Mm Mm Good",
-                "mm id like": "I like you",
-                "mm id like to swipe": "swipe my heart",
-                "mm id like to swipe right on": "on your honor"]
+            "mm id like": "I like you",
+            "mm id like to swipe": "swipe my heart",
+            "mm id like to swipe right on": "on your honor",
+            "yeah im": "Yeah, i’m hungry",
+            "yeah im starving": "would love to eat",
+            "yeah im starving lemme": "let me see",
+            "yeah im starving lemme see that": "diners nearby",
+            "def": "Definitely yours",
+            "def but my": "but my darling",
+            "def but my favorite game": "favorite game is you",
+            "def but my favorite game is just the": "just the best",
+            "im": "I am",
+            "im w": "working out",
+            "im wearing edible p": "doing pilates",
+            "ok": "Okay",
+            "ok but i like": "but I like you",
+            "i had": "I had a good time",
+            "i had chlam": "clams casino",
+            "i had chlamydia but now its": "but now it’s nice of you",
+            "i want you": "I want you",
+            "i want you to f": "to find me"]
     }
     
     var suffixDictionary: [String: String] {
-        return ["ur abs": "Hey! Do you want to make plans?",
-                "that d": ""]
+        return ["your abs": "Hey! Do you want to make plans?",
+            "that d": "I’m famished! What’s your favorite tea?",
+            "the tip": "You sunk my battleship!",
+            "panties": "I work at a local food pantry.",
+            "rough": "I have a great relationship with my parents.",
+            "cleared up": "Tell me a secret.",
+            "bang me": "I love fingerpainting!"]
     }
     
 }
