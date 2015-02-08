@@ -102,10 +102,15 @@ class KeyboardViewController: UIInputViewController {
     // MARK: Demo
     
     func updateAutocomplete() {
-        let context = (textDocumentProxy as UITextDocumentProxy).documentContextBeforeInput
-        let completion = completionDictionary[context.lowercaseString]
-        if let completion = completion {
+        let context = (textDocumentProxy as UITextDocumentProxy).documentContextBeforeInput.lowercaseString
+        if let completion = completionDictionary[context] {
             autocomplete1.setTitle(completion, forState: .Normal)
+        } else {
+            for (suffix, completion) in suffixDictionary {
+                if context.hasSuffix(suffix) {
+                    autocomplete1.setTitle(completion, forState: .Normal)
+                }
+            }
         }
     }
     
@@ -114,6 +119,11 @@ class KeyboardViewController: UIInputViewController {
                 "mm id like": "I like you",
                 "mm id like to swipe": "swipe my heart",
                 "mm id like to swipe right on": "on your honor"]
+    }
+    
+    var suffixDictionary: [String: String] {
+        return ["ur abs": "Hey! Do you want to make plans?",
+                "that d": ""]
     }
     
 }
