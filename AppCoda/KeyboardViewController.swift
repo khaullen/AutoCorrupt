@@ -6,6 +6,10 @@
 //  Copyright (c) 2014 Appcoda. All rights reserved.
 //
 
+// TODO: remove period
+// TODO: enlarge backspace
+// TODO: unicode chars for control keys
+
 import UIKit
 
 class KeyboardViewController: UIInputViewController {
